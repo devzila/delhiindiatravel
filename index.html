@@ -1,0 +1,206 @@
+<html>
+  <head>
+    <style>
+      body {
+          background: #f1f1ed;
+      }
+
+      .item {
+          position: relative;
+          background: #bebebe;
+          color: black;
+          padding: 0px !important;
+          background-color: #fff;
+          overflow: hidden;
+          transition: 0.2s;
+          border-radius: 8px;
+          box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+      }
+
+      .item:hover {
+          transform: translateY(-0.5%);
+          box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+      }
+
+      .card__img {
+          display: block;
+          object-fit: cover;
+      }
+
+      .card__title{ /* Just for styling */
+          align-self: flex-end; padding: 0.5rem;
+          color: rgba(255,255,255,.90); font-size: 2rem;
+          line-height: 1;font-weight: 600;
+          position: absolute; left: 0; bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+  <div id="device">
+    <div class="item">
+      <div class="card">
+        <img class="card__img" src="https://images.unsplash.com/photo-1506318164473-2dfd3ede3623?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3300&amp;q=80" alt="Canyons"/>
+        <span class="card__title">
+          New Text
+        </span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="card">
+        <img class="card__img" src="images/potrait.jpeg" alt="Canyons"/>
+        <span class="card__title">
+          Title goes here as long
+        </span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="card">
+        <video width="100%" loop muted autoplay>
+          <source src="https://niftyme.s3.amazonaws.com/Nifty+Me+Animation-Final+Cut.mp4" type="video/mp4">
+        </video>
+        <span class="card__title">
+          Title goes here as long
+        </span>
+      </div>
+    </div>
+
+
+    <div class="item">
+      <div class="card">
+        <img class="card__img" src="images/potrait2.jpeg" alt="Canyons"/>
+        <span class="card__title">
+          Title goes here as long
+        </span>
+      </div>
+    </div>
+
+
+    <div class="item">
+      <div class="card">
+        <img class="card__img" src="images/potrait3.jpg" alt="Canyons"/>
+        <span class="card__title">
+          Title goes here as long
+        </span>
+      </div>
+    </div>
+
+
+    <div class="item">
+      <div class="card">
+        <img class="card__img" src="images/potrait4.jpg" alt="Canyons"/>
+        <span class="card__title">
+          Title goes here as long
+        </span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="card">
+        <img class="card__img" src="images/potrait5.jpg" alt="Canyons"/>
+        <span class="card__title">
+          Title goes here as long
+        </span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="card">
+        <img class="card__img" src="images/potrait6.jpg" alt="Canyons"/>
+        <span class="card__title">
+          Title goes here as long
+        </span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="card">
+        <img class="card__img" src="images/potrait7.jpg" alt="Canyons"/>
+        <span class="card__title">
+          Title goes here as long
+        </span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="card">
+        <img class="card__img" src="images/potrait8.jpg" alt="Canyons"/>
+        <span class="card__title">
+          Title goes here as long
+        </span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="card">
+        <img class="card__img" src="images/potrait9.jpg" alt="Canyons"/>
+        <span class="card__title">
+          Title goes here as long
+        </span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="card">
+        <img class="card__img" src="images/potrait.jpeg" alt="Canyons"/>
+        <span class="card__title">
+          Title goes here as long
+        </span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="card">
+        <img class="card__img" src="images/potrait.jpeg" alt="Canyons"/>
+        <span class="card__title">
+          Title goes here as long
+        </span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="card">
+        <img class="card__img" src="images/potrait.jpeg" alt="Canyons"/>
+        <span class="card__title">
+          Title goes here as long
+        </span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="card">
+        <img class="card__img" src="images/potrait.jpeg" alt="Canyons"/>
+        <span class="card__title">
+          Title goes here as long
+        </span>
+      </div>
+    </div>
+
+  </div>
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery.grid-a-licious.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#device").gridalicious({
+            gutter: 20,
+            padding: 0,
+            width: 275,
+            animate: true,
+            animationOptions: {
+                speed: 50,
+                duration: 500,
+                complete: onComplete
+            },
+        });
+
+        // function not used.
+        function onComplete(data) {
+
+        }
+    });
+</script>
+</body>
+</html>
